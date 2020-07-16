@@ -1,4 +1,4 @@
-FROM balenalib/raspberrypi3-debian-node:12.16.2-buster-build
+FROM balenalib/raspberrypi3-debian-node:12.16.3-buster-build
 
 WORKDIR /root/.homebridge
 RUN npm install -g --unsafe-perm homebridge homebridge-mqtt

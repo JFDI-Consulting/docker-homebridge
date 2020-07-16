@@ -27,8 +27,7 @@ function selectPort() {
 
 const username = generateUsername();
 const port = selectPort();
-const name =
-    "Homebridge " + username.substr(username.length - 5).replace(/:/g, "");
+const name = "Homebridge " + username.substr(username.length - 5).replace(/:/g, "");
 
 // Base Config
 const config = {
@@ -43,7 +42,7 @@ const config = {
         {
             platform: "mqtt",
             name: "mqtt",
-            url: "mqtt://127.0.0.1"
+            url: "mqtt://localhost"
         }
     ]
 };
